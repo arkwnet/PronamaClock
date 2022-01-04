@@ -1,0 +1,93 @@
+.main-date, .main-time {
+	position: fixed;
+	left: 40px;
+	color: #fff;
+	text-shadow: 0 0 6px #000;
+	z-index: 10;
+}
+
+.main-date {
+	bottom: 200px;
+	font-family: RobotoRegular, NotoSansJPRegular;
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.main-time {
+	bottom: 30px;
+	font-family: RobotoMedium;
+	font-size: 160px;
+}
+
+.main-second {
+	position: fixed;
+	right: -15px;
+	top: -120px;
+	color: #fff;
+	font-family: RobotoRegular, NotoSansJPRegular;
+	font-size: 500px;
+	opacity: 0.3;
+	letter-spacing: -15px;
+	z-index: 0;
+}
+
+.pronama-clock-cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.3;
+}
+
+@media screen and (min-width: 1400px) {
+	.main-date {
+		bottom: 320px;
+		font-size: 80px;
+	}
+	.main-time {
+		bottom: 0;
+		font-size: 300px;
+	}
+	.main-second {
+		right: -25px;
+		top: -170px;
+		font-size: 700px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.main-date {
+		bottom: 180px;
+		font-size: 40px;
+	}
+	.main-time {
+		font-size: 140px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.main-date, .main-time {
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
+	.main-second {
+		right: -10px;
+		top: -65px;
+		font-size: 300px;
+		letter-spacing: -10px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.main-date {
+		bottom: 125px;
+		font-size: 28px;
+	}
+	.main-time {
+		bottom: 15px;
+		font-size: 100px;
+	}
+}
